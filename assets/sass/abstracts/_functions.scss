@@ -5,3 +5,7 @@
         @return map-get($colors, light);
     }
 }
+
+@function rem($pixels, $base: 16) {
+    @return calc($pixels / $base) + rem;
+}
