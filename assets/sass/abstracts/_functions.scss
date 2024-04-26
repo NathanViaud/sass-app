@@ -9,3 +9,11 @@
 @function rem($pixels, $base: 16) {
     @return calc($pixels / $base) + rem;
 }
+
+@function getGradientCircle($color) {
+    @if (lightness($color) > 50) {
+        @return radial-gradient(circle, $color, darken($color, 15%))
+    } @else if (lightness($color) < 50) {
+        @return radial-gradient(circle, $color, lighten($color, 15%))
+    }
+}

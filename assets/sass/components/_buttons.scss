@@ -15,6 +15,7 @@
 
             &:hover {
                 background: darken($color, 10%);
+                color: getTextColor(darken($color, 10%));
             }
         }
     }

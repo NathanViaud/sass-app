@@ -1,0 +1,21 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+
+    &-content {
+        @extend .mt-2;
+
+        text-align: center;
+    }
+
+    &-links {
+        @include flexbox($justify-content: center, $align-items: center, $gap: 1em, $display: inline-flex );
+
+        padding: 1em 2em;
+        border-radius: $border-radius-full;
+        box-shadow: $box-shadow-default;
+        background: map-get($colors, primary);
+    }
+}

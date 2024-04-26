@@ -19,6 +19,14 @@ html {
 }
 
 body {
-    background: map-get($colors, primary);
+    background: getGradientCircle(map-get($colors, primary));
     color: getTextColor(map-get($colors, primary));
+}
+
+a {
+    transition: all .3s ease;
+
+    &:hover {
+        color: map-get($colors, secondary);
+    }
 }
