@@ -8,3 +8,11 @@ import './bootstrap.js';
 
 // any CSS you import will output into a single css file (app.css in this case)
 import './sass/app.scss';
+
+// Import images
+import './images/moi.webp';
+import './images/image1.jpg';
+import './images/image2.jpg';
+import './images/image3.jpg';
+import './images/image4.jpg';
+import './images/image5.jpg';
