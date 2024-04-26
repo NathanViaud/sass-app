@@ -1,3 +1,23 @@
-html, body {
+html,
+body {
     scroll-behavior: smooth;
+}
+
+html {
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 5%;
+        right: 5%;
+        box-shadow: $box-shadow-default;
+    }
+}
+
+body {
+    background: map-get($colors, primary);
+    color: getTextColor(map-get($colors, primary));
 }
