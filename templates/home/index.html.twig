@@ -4,23 +4,14 @@
 
 {% block body %}
    {% include 'home/_banner.html.twig' %}
-   <h1>Page d'accueil</h1>
-   <h2>Page d'accueil</h2>
-   <h3>Page d'accueil</h3>
-   <h4>Page d'accueil</h4>
-   <h5>Page d'accueil</h5>
-   <h6>Page d'accueil</h6>
-   <p>Page d'accueil</p>
+   {% include 'home/_carousel.html.twig' %}
 
-   <a href="#" class="btn-primary">Bouton</a>
-   <a href="#" class="btn-secondary">Bouton</a>
-   <a href="#" class="btn-danger">Bouton</a>
-   <a href="#" class="btn-info">Bouton</a>
-   <a href="#" class="btn-success">Bouton</a>
-   <a href="#" class="btn-warning">Bouton</a>
-
-   <div class="d-flex">
-      <p>TEST</p>
-      <p>TEST</p>
-   </div>
+   <article class="card px-2 py-1 mt-5">
+      <p class="card-date">Friday, Apris 26th</p>
+      <h3 class="card-title">Title</h3>
+      <p class="card-content">
+         Lorem ipsum dolor sit amet. Et inventore sequi non fugit dolorem et quia maiores qui voluptas dolorem ut aspernatur illo. Nam minima totam et adipisci architecto eum ipsum iusto aut iure amet et adipisci veritatis qui enim explicabo nam esse itaque. Id rerum enim in numquam alias sit accusamus doloremque qui nobis unde id numquam tempora sed ipsam excepturi! Eum modi assumenda et quae quos et illum blanditiis aut voluptatum voluptate qui enim voluptatem nam recusandae illum. </p><p>Et aliquam quis sed molestias architecto non rerum explicabo et illum dignissimos id cupiditate reiciendis rem omnis perspiciatis. In explicabo harum est suscipit natus non nulla maiores aut laudantium Quis. </p><p>Et Quis voluptatem ab dolor natus non consectetur numquam aut fugiat atque non similique dicta. Qui repellendus molestias et sunt distinctio est ducimus aliquid. Eos nihil nostrum ut placeat omnis aut delectus quis et eveniet neque. Et blanditiis suscipit ut quia rerum quo sint laborum quo quia quisquam sed beatae illo.
+      </p>
+      <a href="#" class="btn-secondary">Read more</a>
+   </article>
 {% endblock %}

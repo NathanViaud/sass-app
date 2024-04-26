@@ -1,0 +1,35 @@
+.carousel {
+    width: 95%;
+    @include flexbox($gap: 1rem, $justify-content: space-between, $flex-wrap: nowrap);
+
+    $num-images: 5;
+    $rotation-angle: 15;
+    @for $i from 1 through $num-images {
+        $random-rotation: random() * 10 - $rotation-angle;
+        //$random-rotation: $i * $rotation-angle;
+        //$random-rotation: 0;
+        //@if $i % 2 == 0 {
+        //    $random-rotation: $rotation-angle;
+        //} @else {
+        //    $random-rotation: -$rotation-angle;
+        //}
+
+        img:nth-child(#{$i}) {
+            transform: rotate(#{$random-rotation}deg);
+        }
+    }
+
+    img {
+        max-width: rem(250);
+        min-width: rem(100);
+        max-height: rem(250);
+        min-height: rem(100);
+        aspect-ratio: 1/1;
+        border-radius: $border-radius;
+        transition: transform 0.3s;
+
+        &:hover {
+            transform: rotate(0deg) scale(1.1);
+        }
+    }
+}
