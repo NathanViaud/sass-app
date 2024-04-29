@@ -7,6 +7,8 @@ html {
     position: relative;
 
     &::before {
+        background: map-get($colors, primary);
+        z-index: -1;
         content: "";
         position: absolute;
         top: 0;
@@ -22,6 +24,7 @@ body {
     background: getGradientCircle(map-get($colors, primary));
     color: getTextColor(map-get($colors, primary));
 }
+
 
 a {
     transition: all .3s ease;

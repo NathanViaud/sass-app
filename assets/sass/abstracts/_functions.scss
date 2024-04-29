@@ -12,8 +12,8 @@
 
 @function getGradientCircle($color) {
     @if (lightness($color) > 50) {
-        @return radial-gradient(circle, $color, darken($color, 15%))
+        @return radial-gradient(circle, $color, darken($color, 10%))
     } @else if (lightness($color) < 50) {
-        @return radial-gradient(circle, $color, lighten($color, 15%))
+        @return radial-gradient(circle, $color, lighten($color, 10%))
     }
 }

@@ -1,0 +1,27 @@
+.blog-list {
+    @include flexbox($gap: 2rem, $flex-direction: column);
+
+    .card {
+        &-title {
+            @extend h4;
+        }
+
+        &-date {
+            @extend .text-muted;
+            padding-left: .5em;
+            position: relative;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 1px;
+                width: 2px;
+                height: 100%;
+                background-color: #a1a1aa;
+                border-radius: $border-radius;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+}
